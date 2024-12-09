@@ -1,0 +1,31 @@
+Contents:
+---------
+00:01 📜 Introduction to advanced shell scripting concepts.
+00:41 🛠️ Bash scripting is the focus, applicable across different operating systems.
+01:25 💡 Recap of previous video, covered basic shell script and system commands (DF, free, nproc, top).
+03:28 🚀 Goal: Create a custom shell script to monitor virtual machine health.
+06:00 🗒️ Using metadata information to detail script author, date, purpose, and version.
+07:25 🔍 Debugging techniques: Using Echo statements for clear script output.
+09:12 🐍 Introduction to grep command to filter output.
+10:48 🔄 Piping output using the pipe symbol (|) to chain commands.
+18:48 🔀 Combining grep and PS command to filter specific process information.
+22:46 📊 Grep command filters output data; Pipe statement sends output from first to second command.
+23:30 🔄 Piping date command's output doesn't work due to default output channel; Pipe transfers output from STDIN to the next command.
+25:23 🚀 Interview question: Pipe doesn't work with date command because it sends output to STDIN; Pipe needs commands not sending info to STDIN.
+26:46 📄 'awk' command extracts specific columns from output data, useful for data filtering in logs.
+31:48 ⌨️ Shell script best practice: Use 'set -e' to exit script on errors, ensuring immediate error detection.
+32:17 🛑 Set 'set -o pipefail' to make sure script stops on pipe command failures.
+40:14 🗃️ Retrieving error logs from external storage using 'curl' command and piping it to 'grep' for specific data extraction.
+45:09 🌐 'curl' command used for making HTTP requests, similar to tools like Postman; Retrieve data from APIs and websites in scripts.
+45:52 📜 Shell scripting can be used by DevOps Engineers to automate tasks and perform various operations efficiently.
+46:05 📜 DevOps Engineers can use the `curl` command or the Python `requests` module for API requests and retrieving information from resources.
+46:20 📜 The `wget` command can be used to download files from the internet, but it doesn't display output; whereas `curl` can show output directly.
+47:15 📜 The `grep` command can be used with `curl` output or downloaded files to filter information, aiding in error detection.
+48:10 📜 The `find` command is useful for locating files in a directory structure based on various conditions.
+54:21 📜 Understanding `if` and `if-else` conditions in shell scripting helps to execute different actions based on specific conditions.
+54:49 📜 Learning `for` loops is essential for automating repetitive tasks and iterating through a range of values.
+57:55 📜 Utilizing the `trap` command allows you to handle signals like Ctrl+C, providing actions to be taken when specific signals are received.
+01:07:59 🔗 The `trap` command in Linux can be used to handle and respond to various signals, like Ctrl+C, in order to control script behavior and prevent unintended consequences.
+01:08:13 📜 A real-world scenario for using the `trap` command is preventing incomplete data from being used by executing cleanup actions when someone interrupts a script with Ctrl+C.
+01:09:22 🔗 The video concludes by encouraging viewers to comment and suggest topics for future videos, offering to provide more in-depth explanations on commands like `curl`, SMTP, or trap signals based on audience feedback.
+
