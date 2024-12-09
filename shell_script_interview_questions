@@ -1,7 +1,39 @@
 0:47 List some of the commonly used shell commands ?
-3:18 Write a simple shell script to list all processes 
+Answer:
+ls
+touch
+mkdir
+grep
+cp
+mv
+vim
+etc;
+========================================================================
+3:18 Write a simple shell script to list all processes
+Answer:
+ps -ef
+
+if interviewer asks to print particular id of a process like amazon then
+Answer:
+ps -ef | grep -i "amazon" | awk -F" " '{print $2}'  #$2 is used to print 
+                                                     2nd row
+=========================================================================
 5:30 Write a script to print only errors from a remote log
+Answers:
+curl https://raw.githubusercontent.com/infinity1224/sandbox/refs/heads/main/log/dummylog01122022.log | grep -i "error"    #url can be anything
+===============================================================================================================================================
 9:52 Write a shell script to print numbers divided by 3 & 5 and not 15
+Answer:
+#!/bin/bash
+
+for i in {1..100}
+do
+if ([ $(expr $i % 3) -eq 0 ] || [ $(expr $i % 5) -eq 0 ]) && [ $(expr $i % 15) -ne 0 ]
+then
+        echo "$i"
+fi
+done
+========================================================================================
 19:24 Write a script to print number of "S" in Mississippi
 23:36 How will you debug the shell script?
 23:59 What is crontab in Linux? Can you provide an example of usage?
